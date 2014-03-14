@@ -12,17 +12,11 @@
 (global-set-key (kbd "C-c C--") 'replace-next-underscore-with-camel)
 (global-set-key (kbd "M-s M--") 'snakeify-current-word)
 
-;; Make shell more convenient, and suspend-frame less
-(global-set-key (kbd "C-z") 'shell)
-(global-set-key (kbd "C-x M-z") 'suspend-frame)
-
 ;; Edit file with sudo
 (global-set-key (kbd "M-s e") 'sudo-edit)
 
 ;; Window switching
-(windmove-default-keybindings) ;; Shift+direction
-(global-set-key (kbd "C-x -") 'toggle-window-split)
-(global-set-key (kbd "C-x C--") 'rotate-windows)
+(global-set-key (kbd "C-c r") 'rotate-windows)
 
 ;; Navigation bindings
 (global-set-key (kbd "<prior>") 'beginning-of-buffer)
