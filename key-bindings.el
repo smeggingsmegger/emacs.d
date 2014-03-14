@@ -36,6 +36,10 @@
 (global-set-key (kbd "<C-S-return>") 'open-line-above)
 (global-set-key (kbd "<M-return>") 'new-line-dwim)
 
+;; Copy|Delete Lines
+(global-set-key (kbd "C-c k") 'copy-line)
+(global-set-key (kbd "C-c d") 'kill-whole-line)
+
 ;; Find files by name and display results in dired
 (global-set-key (kbd "M-s f") 'find-name-dired)
 
