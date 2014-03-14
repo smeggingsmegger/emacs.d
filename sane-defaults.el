@@ -1,6 +1,9 @@
 ;; Allow pasting selection outside of Emacs
 (setq x-select-enable-clipboard t)
 
+;; Terminal Mouse Control
+(xterm-mouse-mode 1)
+
 ;; Auto refresh buffers
 (global-auto-revert-mode 1)
 

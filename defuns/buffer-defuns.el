@@ -48,6 +48,11 @@
              (set-window-start w2 s1)
              (setq i (1+ i)))))))
 
+(defun toggle-show-trailing-whitespace ()
+  "Toggle show-trailing-whitespace between t and nil"
+  (interactive)
+  (setq show-trailing-whitespace (not show-trailing-whitespace)))
+
 (defun untabify-buffer ()
   (interactive)
   (untabify (point-min) (point-max)))
