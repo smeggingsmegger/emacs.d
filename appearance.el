@@ -1,4 +1,5 @@
-(setq font-lock-maximum-decoration t
+(setq ring-bell-function 'ignore
+      font-lock-maximum-decoration t
       color-theme-is-global t
       truncate-partial-width-windows nil)
 
