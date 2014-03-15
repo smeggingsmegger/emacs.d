@@ -15,6 +15,9 @@
 ;; Show trailing whitespace
 (setq-default show-trailing-whitespace t)
 
-;; TODO: Set new theme here
+;; Set Solarized color theme
+(require-package 'color-theme-solarized)
+(load-theme 'solarized-dark t)
+(setq solarized-broken-srgb 'nil)
 
 (provide 'appearance)

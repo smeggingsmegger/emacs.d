@@ -8,12 +8,18 @@
 ;; Set up load path
 (add-to-list 'load-path user-emacs-directory)
 
+;; Are we on a mac?
+(setq is-mac (equal system-type 'darwin))
+
+;; Setup Package commands
+(require 'setup-package)
+
+;; Set up appearance
+(require 'appearance)
+
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file)
-
-;; Set up appearance early
-(require 'appearance)
 
 ;; Write backup files to own directory
 (setq backup-directory-alist
@@ -27,12 +33,6 @@
 (require 'saveplace)
 (setq-default save-place t)
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
-
-;; Are we on a mac?
-(setq is-mac (equal system-type 'darwin))
-
-;; Setup Package commands
-(require 'setup-package)
 
 ;; Lets start with a smattering of sanity
 (require 'sane-defaults)
@@ -63,3 +63,13 @@
 
 ;; Conditionally load Mac settings
 (when is-mac (require 'mac))
+
+;; Emacs server
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
+;; Run at full power please
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(put 'narrow-to-region 'disabled nil)
