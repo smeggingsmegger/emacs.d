@@ -20,4 +20,11 @@
 (load-theme 'solarized-dark t)
 (setq solarized-broken-srgb 'nil)
 
+;; org-mode colors
+(setq org-todo-keyword-faces
+      '(
+        ("STARTED" . (:foreground "yellow" :weight bold))
+        ("TODO" . (:foreground "red" :weight bold))
+        ))
+
 (provide 'appearance)
