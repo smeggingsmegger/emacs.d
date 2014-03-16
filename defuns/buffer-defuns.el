@@ -43,3 +43,9 @@ Including indent-buffer, which should not be called automatically on save."
   (untabify-buffer)
   (delete-trailing-whitespace)
   (indent-buffer))
+
+(defun switch-to-minibuffer-window ()
+  "switch to minibuffer window (if active)"
+  (interactive)
+  (when (active-minibuffer-window)
+    (select-window (active-minibuffer-window))))

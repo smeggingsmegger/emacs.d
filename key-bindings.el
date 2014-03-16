@@ -4,6 +4,9 @@
 (global-set-key (kbd "C-c C-n") 'cleanup-buffer)
 (global-set-key (kbd "C-c C-<return>") 'delete-blank-lines)
 
+;; Redirect back to minibuffer
+(global-set-key (kbd "<f2>") 'switch-to-minibuffer-window)
+
 ;; Use shell-like backspace C-h, rebind help to F1
 (define-key key-translation-map [?\C-h] [?\C-?])
 (global-set-key (kbd "<f1>") 'help-command)
@@ -29,6 +32,7 @@
 ;; Comment/uncomment block
 (global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-c u") 'uncomment-region)
+(global-set-key (kbd "C-c ,") 'toggle-comment-on-line)
 
 ;; Eval buffer
 (global-set-key (kbd "C-c C-k") 'eval-buffer)
