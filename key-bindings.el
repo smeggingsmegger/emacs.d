@@ -55,7 +55,7 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 
 ;; Hippie Expand
-(global-set-key (kbd "M-<tab>") 'hippie-expand)
+(global-set-key (kbd "C-c e") 'hippie-expand)
 
 ;; Magit bindings
 (global-set-key (kbd "C-c p") 'magit-find-file-completing-read)
