@@ -12,9 +12,6 @@
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
 
-;; Show trailing whitespace on files
-(add-hook 'after-change-major-mode-hook 'show-trailing-whitespace-on-files)
-
 ;; Set Solarized color theme
 (require-package 'color-theme-solarized)
 (load-theme 'solarized-dark t)
