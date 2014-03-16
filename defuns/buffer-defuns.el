@@ -28,6 +28,12 @@
   (interactive)
   (setq show-trailing-whitespace (not show-trailing-whitespace)))
 
+(defun show-trailing-whitespace-on-files ()
+  "Show trailing whitespace on files only"
+  (interactive)
+  (when (not (eq buffer-file-name nil))
+    (setq show-trailing-whitespace t)))
+
 (defun untabify-buffer ()
   (interactive)
   (untabify (point-min) (point-max)))
