@@ -53,6 +53,8 @@
 ;; Org bindings
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "<f3>") 'org-mobile-pull)
+(global-set-key (kbd "<f4>") 'org-mobile-push)
 
 ;; Hippie Expand
 (global-set-key (kbd "C-c e") 'hippie-expand)
