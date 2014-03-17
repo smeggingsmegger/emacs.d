@@ -45,8 +45,7 @@
 ;; Don't highlight matches with jump-char - it's distracting
 (setq jump-char-lazy-highlight-face nil)
 
-;; Always display line and column numbers
-(global-linum-mode 1)
+;; Always display column numbers
 (setq column-number-mode t)
 
 ;; Save a list of recent files visited. (open recent file with C-x f)

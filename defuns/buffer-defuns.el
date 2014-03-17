@@ -28,11 +28,12 @@
   (interactive)
   (setq show-trailing-whitespace (not show-trailing-whitespace)))
 
-(defun show-trailing-whitespace-on-files ()
-  "Show trailing whitespace on files only"
+(defun show-ws-and-linum-on-files ()
+  "Show trailing whitespace and line numbers on files only"
   (interactive)
   (when (not (eq buffer-file-name nil))
-    (setq show-trailing-whitespace t)))
+    (setq show-trailing-whitespace t)
+    (linum-mode 1)))
 
 (defun untabify-buffer ()
   (interactive)

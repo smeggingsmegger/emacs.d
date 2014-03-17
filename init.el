@@ -56,7 +56,7 @@
     (load file)))
 
 ;; Show trailing whitespace on files
-(add-hook 'after-change-major-mode-hook 'show-trailing-whitespace-on-files)
+(add-hook 'after-change-major-mode-hook 'show-ws-and-linum-on-files)
 
 ;; Bring in 3rd Party packages
 (require '3rd-party)
