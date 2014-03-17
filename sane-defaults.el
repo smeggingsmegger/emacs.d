@@ -104,4 +104,8 @@
     (dotimes (i 10)
       (when (= p (point)) ad-do-it))))
 
+;; Hide warnings about discarding undo info
+(require 'warnings)
+(add-to-list 'warning-suppress-types '(undo discard-info))
+
 (provide 'sane-defaults)
