@@ -24,4 +24,7 @@
         ("TODO" . (:foreground "red" :weight bold))
         ))
 
+;; Set Font -- http://levien.com/type/myfonts/inconsolata.html
+(set-default-font "Inconsolata-16")
+
 (provide 'appearance)
