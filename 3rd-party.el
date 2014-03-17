@@ -1,6 +1,7 @@
 ;; On the fly syntax checking
 (require-package 'flycheck)
 (global-flycheck-mode 1)
+(setq flycheck-check-syntax-automatically '(mode-enabled save))
 
 ;; Git Stuffis
 (require-package 'magit)
