@@ -24,7 +24,8 @@
         ("TODO" . (:foreground "red" :weight bold))
         ))
 
-;; Set Font -- http://levien.com/type/myfonts/inconsolata.html
-(set-default-font "Inconsolata-16")
+;; Set Font for all frames -- http://levien.com/type/myfonts/inconsolata.html
+(add-to-list 'default-frame-alist
+             '(font . "Inconsolata-16"))
 
 (provide 'appearance)
