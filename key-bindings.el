@@ -62,4 +62,7 @@
 ;; Magit bindings
 (global-set-key (kbd "C-c p") 'magit-find-file-completing-read)
 
+;; Refresh Syntax Highlighting
+(global-set-key (kbd "C-c C-f") 'font-lock-fontify-buffer)
+
 (provide 'key-bindings)
