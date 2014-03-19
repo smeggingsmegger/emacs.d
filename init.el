@@ -64,6 +64,9 @@
 ;; Setup key bindings
 (require 'key-bindings)
 
+;; Setup mode hooks
+(require 'mode-hooks)
+
 ;; Conditionally load Mac settings
 (when is-mac (require 'mac))
 
