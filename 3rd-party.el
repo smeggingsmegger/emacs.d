@@ -10,6 +10,7 @@
 ;; Extra Language Modes
 (require-package 'coffee-mode)
 (require-package 'go-mode)
+(require-package 'haskell-mode)
 (require-package 'markdown-mode)
 (require-package 'puppet-mode)
 
