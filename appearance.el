@@ -13,8 +13,8 @@
 (show-paren-mode 1)
 
 ;; Set Solarized color theme
-(require-package 'color-theme-solarized)
-(load-theme 'solarized-dark t)
+(require-package 'monokai-theme)
+(load-theme 'monokai t)
 (setq solarized-broken-srgb 'nil)
 
 ;; org-mode colors
